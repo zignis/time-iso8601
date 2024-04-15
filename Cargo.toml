@@ -1,0 +1,13 @@
+[package]
+name = "time-iso8601"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["zignis <velociraptorm77@gmail.com>"]
+description = "Serialize and deserialize date-time in ISO-8601 format"
+keywords = ["formatting", "time", "date", "serde", "iso8601"]
+repository = "https://github.com/zignis/time-iso8601.git"
+readme = "README.md"
+
+[dependencies]
+time = { version = "0.3.36", features = ["serde", "formatting", "macros"] }
