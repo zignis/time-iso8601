@@ -13,7 +13,7 @@ const CONFIG: EncodedConfig = Config::DEFAULT
 
 const FORMAT: Iso8601<CONFIG> = Iso8601::<CONFIG>;
 
-::time::serde::format_description!(time_format, OffsetDateTime, FORMAT);
+time::serde::format_description!(time_format, OffsetDateTime, FORMAT);
 
 pub use time_format::*;
 
