@@ -15,8 +15,8 @@ const FORMAT: Iso8601<CONFIG> = Iso8601::<CONFIG>;
 
 ::time::serde::format_description!(time_format, OffsetDateTime, FORMAT);
 
-pub use super::time_format::*;
+pub use time_format::*;
 
 pub mod option {
-    pub use super::super::time_format::option::*;
+    pub use super::time_format::option::*;
 }
